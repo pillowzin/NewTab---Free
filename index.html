@@ -39,29 +39,42 @@
     <!-- Coluna Esquerda -->
     <section class="coluna-esquerda">
       <div class="bloco-links">
+        <div class="botoes-coloridos" style="position: relative;">
+
+<div class="botoes-coloridos" style="position: relative;">
+  <!-- botão “+” -->
+  <button id="addCustomBtn" class="add-custom-btn">+</button>
+  
+  <!-- aqui serão seus <a>… existentes -->
+
+  <!-- form inicialmente escondido -->
+  <div id="customBtnForm" class="custom-form hidden">
+    <input type="text" id="cb-name"  placeholder="Nome do botão">
+    <input type="text" id="cb-url"   placeholder="URL (https://…)">
+    <input type="text" id="cb-color" placeholder="#hexadecimal">
+    <button id="cb-save">Salvar</button>
+  </div>
+</div>
+
         <h3>Favoritos</h3>
-        <div class="botoes-coloridos">
-          <a href="https://youtube.com" style="background-color:#FF0000;">YouTube</a>
-          <a href="https://lichess.org" style="background-color:#111;">Lichess</a>
-          <a href="https://chess.com" style="background-color:#6A994E;">Chess.com</a>
-          <a href="https://www.bibliaonline.com.br" style="background-color:#8A2BE2;">Bíblia Online</a>
-        </div>
+<div class="botoes-coloridos" style="position: relative;">
+  <!-- botão “+” que abre o form -->
+  <button id="addCustomBtn" class="add-custom-btn">+</button>
 
-        <h3>Redes Sociais</h3>
-        <div class="botoes-coloridos">
-          <a href="https://instagram.com" style="background-color:#E1306C;">Instagram</a>
-          <a href="https://web.whatsapp.com/" style="background-color:#25D366;">WhatsApp</a>
-          <a href="https://discord.com/channels/@me" style="background-color:#5865F2;">Discord</a>
-          <a href="https://facebook.com" style="background-color:#1877F2;">Facebook</a>
-        </div>
+  <!-- form escondido, dentro do mesmo container -->
+  <div id="customBtnForm" class="custom-form hidden">
+    <input type="text" id="cb-name"  placeholder="Nome do botão">
+    <input type="text" id="cb-url"   placeholder="URL (https://…)">
+    <input type="text" id="cb-color" placeholder="#hexadecimal">
+    <button id="cb-save">Salvar</button>
+  </div>
 
-        <h3>Utilitários</h3>
-        <div class="botoes-coloridos">
-          <a href="https://chat.openai.com" style="background-color:#10A37F;">ChatGPT</a>
-          <a href="https://www.canva.com" style="background-color:#00C4CC;">Canva</a>
-          <a href="https://docs.google.com" style="background-color:#4285F4;">Docs</a>
-          <a href="https://milanote.com" style="background-color:#333333;">Milanote</a>
-        </div>
+  <!-- seus links fixos -->
+  <a href="https://youtube.com" style="background-color:#FF0000;">YouTube</a>
+  <a href="https://lichess.org" style="background-color:#111;">Lichess</a>
+  <a href="https://chess.com" style="background-color:#6A994E;">Chess.com</a>
+  <a href="https://www.bibliaonline.com.br" style="background-color:#8A2BE2;">Bíblia Online</a>
+</div>
       </div>
 
       <div class="lista-livros">

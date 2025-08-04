@@ -4,6 +4,7 @@ import './boasVindas.js';
 import './pesquisa.js';
 import './notas.js';
 import './metas.js';
+import './customButtons.js';
 import { adicionarMeta, alterarMeta, removerMeta } from './metas.js';
 
 // Expõe no escopo global para funcionar com onclick
@@ -26,3 +27,11 @@ const board = Chessboard('chessboard', {
   position: 'start',
   pieceTheme: 'js/libs/img/chesspieces/{piece}.png'
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const addBtn = document.getElementById('addCustomBtn');
+  const form   = document.getElementById('customBtnForm');
+  const save   = document.getElementById('cb-save');
+  const container = document.querySelector('.botoes-coloridos');
+
+})

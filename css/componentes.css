@@ -54,18 +54,80 @@
 }
 
 .botoes-coloridos a {
-  width: 120px;
-  height: 80px;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  border-radius: 10px;
-  text-decoration: none;
-  box-shadow: 4px 4px 0 #000;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding: 2px 8px;
+  min-height: 20px;
+  font-size: 14px;
+  /* quadradão menor, mas mantendo estilo */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;    /* largura fixa */
+  height: 60px;   /* altura fixa */
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  border-radius: 4px;  /* cantos levemente arredondados */
+  text-decoration: none;
+  box-shadow: 4px 4px 0 #000;
+  margin: 5px;
 }
+
+.add-custom-btn {
+  position: absolute;
+  top: 0; right: 0;
+  background: #28a745 !important;  
+  color: #fff !important;
+  border: none;
+  border-radius: 50%;  /* redondo */
+  width: 30px; height: 30px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-form {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 35px;
+  background: #222 !important;
+  border: 2px solid #555;
+  padding: 12px;
+  border-radius: 6px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 100; /* para ficar sobre os links */
+}
+
+.custom-form.hidden {
+  display: none;
+}
+
+.custom-form input {
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  background: #111;
+  color: #fff;
+}
+
+.custom-form button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden { display: none; }
 
 .lista-livros li {
   margin-bottom: 10px;
